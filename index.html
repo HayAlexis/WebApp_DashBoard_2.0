@@ -198,10 +198,17 @@
             <!--Custom CSS toggle Code-->
 
             <select class="form-field" id="timezone">
-                <option disabled selected>Select a Timezone</option>
-                <option>Eastern</option>
-<!--More Options-->
-            </select>
+                <option value="00" disabled="disabled" selected="selected" class="select-timezone">Select Timezone</option> 
+                <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>                                      
+            </select> 
 
             <div class="settings-button">
                 <button class="btn-primary" id="save">Save</button>
@@ -209,6 +216,5 @@
             </div>
         </section>
     </main>
-
 </body>
 </html>
