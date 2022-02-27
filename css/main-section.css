@@ -1,0 +1,22 @@
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alt-ban {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    background-color: var(--clr-alert);
+    color: var(--clr-fill);
+    padding: 14px 20px;
+    margin: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alt-ban-close {
+    margin-left: auto;
+}
