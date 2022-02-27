@@ -179,6 +179,35 @@
                 <p>2/27/2022</p>
             </div>
         </section>
+
+        <!--Messaging Widget-->
+        <section class="message">
+            <h3>Message User</h3>
+
+            <form class="widget-container">
+                <input type="text" placeholder="Search for User" class="form-field" id="userField">
+                <textarea placeholder="Message for User" class="form-area" id="messageField"></textarea>
+                <button class="btn-primary" id="send">Send</button>
+            </form>
+        </section>
+
+        <!--Local Settings Widget-->
+        <section>
+            <h3>Settings</h3>
+
+            <!--Custom CSS toggle Code-->
+
+            <select class="form-field" id="timezone">
+                <option disabled selected>Select a Timezone</option>
+                <option>Eastern</option>
+<!--More Options-->
+            </select>
+
+            <div class="settings-button">
+                <button class="btn-primary" id="save">Save</button>
+                <button class="btn-disabled" id="cancel">Cancel</button>
+            </div>
+        </section>
     </main>
 
 </body>
