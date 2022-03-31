@@ -20,3 +20,16 @@
 .alt-ban-close {
     margin-left: auto;
 }
+
+.headline,                      /*line 81 in HTML - dashboard header*/
+.traffic-header,                /*line 92 in HTML - traffic header*/
+.traffic-headline,              /*line 112 in HTML - daily traffic*/
+.mobile-headline,               /*line 121 in HTML - mobile User/dough chart*/
+.social-headline,               /*line 131 in HTML - social status */
+.newMembers-header,             /*line 191 in HTML - new memebers header*/
+.recentActivity-headline,       /*line  in HTML - recent activity*/
+.message-headline,              /**/
+.settings-headline{             /**/
+   font-size:var(--font-size-medium);
+   padding:10px;
+}

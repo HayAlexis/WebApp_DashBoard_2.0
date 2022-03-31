@@ -1,0 +1,32 @@
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .main{ 
+        grid-template-columns: 50%;
+    }
+
+    .traffic, /*Half screen size*/
+    .social {
+        grid-column: 1 / span 2;
+    }
+
+    .daily,  /*Bar chart, new memebers, and messaging*/
+    .members, 
+    .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile, /*doughnut, recent activities, settings*/
+    .activity,
+    .setting {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+}

@@ -1,9 +1,9 @@
-.logo {
+.logo {             /*line 19 of HTML*/
     flex-grow: 1;
     font-size: var(--fnt-size-m);
 }
 
-.bell-icon {
+.bell-icon {        /*line 23 of HTML*/
     display: flex;
     margin-right: 15px;
     height: 50px;
@@ -15,7 +15,7 @@
     animation: bellAnimate 0.5s ease-out;
 }
 
-.notList {
+.notList {          /*line 31 of HTML*/
     width: 210px;
     display: none;
     margin-top: 15px;
@@ -28,7 +28,7 @@
 }
 
 .notList a {
-    color: var(--clr-not);
+    color: var(--clr-not2);
     text-decoration: none;
     display: block;
 }
