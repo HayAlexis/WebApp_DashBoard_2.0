@@ -1,0 +1,114 @@
+
+.alt-ban {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    background-color: var(--clr-alert);
+    color: var(--clr-fill);
+    padding: 14px 20px;
+    margin: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alt-ban-close {
+    margin-left: auto;
+}
+
+.right {
+    background-color: var(--clr-space);
+    border-left: var(--clr-border) 2px solid;
+    border-bottom: var(--clr-border) 2px solid;
+    height: 50px;
+    flex-basis: 100%;
+}
+
+/*Traffic*/
+.traffic-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.traffic li{
+    cursor: pointer;
+    list-style: none;
+}
+
+/*Charts*/
+
+#traffic-chart,
+#doughnut-chart,
+#daily-chart {
+    padding: 16px
+}
+
+.traffic,
+.daily-traffic,
+.mobile,
+.social-stats{
+    border-bottom:var(--color-border) 2px solid; 
+}
+
+.traffic-nav{
+    margin: 15px 10px ;
+}
+
+.traffic li{
+    cursor: pointer;
+}
+
+/*Traffic Active?*/
+
+/*Social Media*/
+
+.social-container {
+    background-color: var(--clr-space);
+    border: var(--clr-border) 2px solid;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    height: 100px;
+    margin: 20px;  
+}
+
+.social-facebook,
+.social-instagram,
+.social-twitter {
+    background-color: var(--clr-main);
+    height:64px; 
+    width: 64px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/*SVG Icon*/
+
+.facebook-icon,
+.instagram-icon,
+.twitter-icon {
+    fill: var(--clr-fill);
+    height: 40px;
+    width: 40px;
+    margin-left: 14px;
+}
+
+.media-name {
+    color:var(--clr-main);
+}
+
+.social-text{
+    font-size: 24px; 
+    margin-left: 20px;
+}
+
+.social-stat{
+    font-size:var(--font-size-large);
+    color: var(--clr-stat);
+}

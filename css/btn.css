@@ -1,0 +1,53 @@
+/*Settings & Buttons*/
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    border-bottom:var(--clr-border) 2px solid; 
+}
+
+.settings-button{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    margin: 10px 16px;  
+ }
+
+.send {
+    background-color: var(--clr-main);
+    color:var(--clr-fill);
+    padding: 14px 20px;
+    margin: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send:hover,
+.save:hover {
+    background-color: var(--clr-alert);
+    border:var(--clr-borderline) 2px solid;
+}
+
+.save {
+    background-color: var(--clr-main);
+}
+
+.cancel {
+    background-color: var(--clr-stat);
+}
+
+.cancel:hover {
+    background-color: var(--clr-cancel);
+    border: var(--clr-cancel-border) 2px solid;
+}
+
+ .save, 
+ .cancel {
+    padding: 14px 10px;
+   border-radius:5px;
+    color: var(--clr-fill);
+    border:none;
+    cursor:pointer;
+    transition: transform 0.5s;
+}

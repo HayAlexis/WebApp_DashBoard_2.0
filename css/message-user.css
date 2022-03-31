@@ -1,0 +1,38 @@
+/*Message User*/
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom:var(--clr-border) 2px solid; 
+}
+
+.form-field{
+    background-color: var(--clr-space);
+    border: var(--clr-border) 2px solid;
+    border-radius: 5px;
+    height: 55px;
+    margin:16px;
+    padding:10px;
+    width: 92%;
+}
+
+textarea {
+    background-color: var(--clr-space);
+    border: var(--clr-border) 2px solid;
+    height: 150px;
+    margin:5px 16px;
+    border-radius: 5px;
+    resize: vertical;
+    padding:10px;
+}
+
+textarea::placeholder{
+    text-align: left;
+}
+
+textarea:focus,
+.form-field:focus { 
+    background-color:var(--clr-fill); 
+    outline-color: var(--clr-borderline);
+    transition: 0.1s;
+}

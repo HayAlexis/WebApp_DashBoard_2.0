@@ -1,0 +1,96 @@
+/*Variables and Globals*/
+
+:root {
+    --clr-main: #7373e9;
+    --clr-second: #454581;
+    --clr-fill: #fff;
+    --clr-space: #d0cdcd;
+    --clr-border: #d3caca;
+    --clr-borderline: #f32929;
+    --clr-not2: black;
+    --clr-badge: red;
+    --clr-not: #a5e779;
+    --clr-alert: orange;
+    --clr-stat: grey;
+    --clr-cancel: #2f2f30;
+    --clr-cancel-border: #09cfdd;
+    --fnt-size-l: 35px;
+    --fnt-size-m: 20px;
+    --fnt-size-s: 13px;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/*Grid Container*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "header"
+                "nav"
+                "main";
+}
+
+header {
+    grid-area: header;
+    background-color: var(--clr-main);
+    display: flex;
+    color: var(--clr-fill);
+    padding: 10px;
+    align-items: center;
+}
+
+header h3 {
+    font-size: var(--fnt-size-s);
+}
+
+nav {
+    grid-area: nav;
+    background-color: var(--clr-second);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+main {
+    grid-area: main;
+    grid-template-columns: 100%;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Section Headers*/
+
+.headline,                      /* line 81 in HTML - dashboard header            */
+.traffic-header,                /* line 92 in HTML - traffic header              */
+.traffic-headline,              /* line 112 in HTML - daily traffic              */
+.mobile-headline,               /* line 121 in HTML - mobile User/dough chart    */
+.social-headline,               /* line 131 in HTML - social status              */
+.newMembers-header,             /* line 191 in HTML - new memebers header        */
+.recentActivity-header,         /* line 240 in HTML - recent activity            */
+.message-header,                /* line 283 in HTML - message user               */
+.settings-header {              /* line 294 in HTML - settings                   */
+   font-size:var(--font-size-medium);
+   padding:10px;
+}
+
+select{
+    background-color: var(--clr-space);
+    border: var(--clr-border) 2px solid;
+    border-radius: 5px;
+    height: 55px;
+    margin:16px;
+    width: 95%;
+}

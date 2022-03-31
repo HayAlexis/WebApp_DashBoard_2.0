@@ -1,32 +1,147 @@
 /* Media Queries */
 
-@media (min-width: 768px) {
+/* Screen Size 768px */
+
+@media screen and (min-width: 768px) {
+    
+    /*Containers*/
+    .grid-container{
+        grid-template-columns: 65px 1fr;
+        grid-template-areas:
+                     "header header"
+                     "nav main"                     
+    }
+
     .main{ 
         grid-template-columns: 50%;
     }
 
-    .traffic, /*Half screen size*/
-    .social {
-        grid-column: 1 / span 2;
-    }
-
-    .daily,  /*Bar chart, new memebers, and messaging*/
-    .members, 
-    .message {
-        grid-column: 1 / span 1;
-    }
-
-    .mobile, /*doughnut, recent activities, settings*/
-    .activity,
-    .setting {
-        grid-column: 2 / span 1;
+    nav{
+        display: flex;
+        justify-content: flex-start; 
+        flex-direction: column;
     }
 
     .widget-container-full {
-        width: 90vw;
+        width: 85vw;
+        margin: 16px;
     }
 
-    .widget-container-half {
-        width: 45vw;
+    .halfDiv {
+        width: 40vw;
+        margin: 16px;
     }
+
+    .social-main-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .member-container{
+        display:flex;
+        width: 100%; 
+        padding: 15px;
+        align-items: center;
+    }
+
+    /*Notification List*/
+    .notList {
+        width:350px;
+        display: none;
+        margin-top: 25px;
+        padding: 0px;
+        position: absolute;
+        top: 45px;
+    }
+
+    /*Messages*/
+    .new-mess {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .close-mess{
+        padding-left: 30px;
+    }
+
+    /*Icons*/
+    .home-icon,
+    .bar-chart, 
+    .members-icon,
+    .settings-icon {
+        width: 50px;
+        height: 50px;
+        padding-top: 20px;
+    }
+
+    .traffic-header {
+        display: flex;
+        align-items: center; 
+     }  
+    .traffic-nav {
+        margin-left: auto;
+    }
+    .traffic-nav-link {
+        margin: 8px;
+    }
+
+    .traffic, /*Half screen size*/
+    .social {
+        display: grid;
+        grid-column: 1 / span 2;
+    }
+
+    .daily-mobile{
+        display: grid;
+    }
+
+    .daily-traffic {   
+        grid-column: 1/2;
+        border-right:var(--clr-border) 2px solid; 
+    }
+
+    .mobile {
+        grid-column: 2/3;
+    }
+
+    /*Members Messages & Messaging Users*/
+    .member-text{
+        text-align: left;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    .arrow {
+        display: inline;
+    }
+
+    .form-field {
+        width: 95%;
+    }
+
+    select {
+        width: 95%;
+    }
+}
+
+/* Screen Size 1024px */
+
+@media screen and (min-width: 1024px) {
+    
+    .members-activities-container,
+    .message-settings{
+        display: grid;
+    }
+
+    .members, 
+    .message{
+        grid-column: 1/2;
+        border-right:var(--clr-border) 2px solid; 
+    }
+
+    .members-activity, 
+    .settings {
+        grid-column: 2/3;
+
+    } 
 }
